@@ -1,0 +1,10 @@
+export type DemoAlert = {
+  id: string; time: string; severity: 'Critical' | 'High' | 'Medium'; source: string; target: string; current: string; predicted: string; probability: number; status: 'New' | 'Investigating' | 'Reviewed'; description: string; evidence: string[]; action: string;
+};
+
+export const demoAlerts: DemoAlert[] = [
+  { id: 'ALT-1042', time: '14:32 IST', severity: 'Critical', source: '192.168.10.42', target: 'VPN Endpoint', current: 'Reconnaissance', predicted: 'Initial Access', probability: 84, status: 'New', description: 'Port diversity and repeated SYN activity indicate probable credential-access attempts.', evidence: ['+420% SYN rate', '38 destination ports', '1,284 failed connections/min'], action: 'Investigate the source and review VPN authentication telemetry.' },
+  { id: 'ALT-1039', time: '14:18 IST', severity: 'High', source: '10.8.4.21', target: 'Web Server', current: 'Reconnaissance', predicted: 'Initial Access', probability: 76, status: 'Investigating', description: 'Sequential service discovery is converging on the public web tier.', evidence: ['Sequential port scan', 'Short connection duration', 'Repeated TLS negotiation'], action: 'Review session logs and validate the source asset owner.' },
+  { id: 'ALT-1034', time: '13:45 IST', severity: 'Medium', source: '172.16.4.9', target: 'Identity Store', current: 'Reconnaissance', predicted: 'Lateral Movement', probability: 61, status: 'Reviewed', description: 'Forecast path suggests possible follow-on access to identity infrastructure.', evidence: ['DNS beacon periodicity', 'Credential endpoint proximity'], action: 'Monitor the asset and correlate with identity-provider events.' },
+  { id: 'ALT-1028', time: '13:12 IST', severity: 'High', source: '192.168.12.18', target: 'DNS Resolver', current: 'Reconnaissance', predicted: 'Command & Control', probability: 38, status: 'New', description: 'High-entropy queries weakly support a possible future command channel.', evidence: ['Elevated DNS entropy', 'Regular query cadence'], action: 'Inspect query samples and preserve evidence for analyst review.' },
+];
