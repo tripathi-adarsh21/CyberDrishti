@@ -12,7 +12,7 @@
 | 📑 **CyberDrishti SIH Presentation** | [Open PPT](./SIH%202026%20PPT.pdf) |
 | 🧠 **CyberDrishti Technical Presentation** | [Open Technical PPT](./Technical%20Presentation%20SIH.pdf) |
 | 🧠 **CyberDrishti Architecture Document** | [Open Technical document](./CyberDrishti%20Architecture%20Document.pdf)
-| 🎥 **CyberDrishti Demo Video** | [Watch on YouTube](YOUR_YOUTUBE_LINK_HERE) |
+| 🎥 **CyberDrishti Demo Video** | [Watch on YouTube](https://youtu.be/1zetl5HXzqI) |
 
 > Replace `` with the final YouTube demo URL before publishing the repository.
 
