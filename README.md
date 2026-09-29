@@ -1,8 +1,7 @@
 # CyberDrishti
 
-CyberDrishti is a frontend-only cybersecurity operations center (SOC) prototype for exploring network risk, attack progression, traffic intelligence, MITRE ATT&CK coverage, explainable AI signals, and predictive alerts in one focused workspace.
+CyberDrishti is a cybersecurity operations center (SOC) prototype for exploring network risk, attack progression, traffic intelligence, MITRE ATT&CK coverage, explainable AI signals, and predictive alerts in one focused workspace.
 
-This project is designed as an interactive product demo. It uses realistic, centralized demo data and simulated interactions; it does not connect to a live network or perform real security analysis.
 
 ## What is included
 
@@ -17,20 +16,6 @@ This project is designed as an interactive product demo. It uses realistic, cent
 - Settings for theme, visualization preferences, resetting the demo scenario, and clearing local session data.
 - Responsive light/dark SOC shell with shared navigation and mobile-friendly layouts.
 
-## Demo scenario
-
-The screens are driven by data in the `data/` directory. The main scenario is intentionally consistent across pages:
-
-- Scenario: `CD-SIH26-RECON-01`
-- Network risk: `78/100` (High)
-- Current stage: Reconnaissance (`92%` confidence)
-- Predicted next stage: Initial Access (`84%` confidence)
-- Infiltration probability: `82%`
-- Forecast path: Normal Traffic -> Suspicious Network Behaviour -> Reconnaissance -> Initial Access -> Lateral Movement -> Command & Control
-
-Demo traffic includes protocol distribution, source and destination summaries, ports, packet statistics, and suspicious-flow records. Demo graph data describes hosts and their relationships, while alert data supplies realistic timestamps, stages, severities, confidence values, and descriptions.
-
-All data is local and deterministic. File selection in Analyze Traffic is visual only: files are not uploaded or parsed.
 
 ## Routes
 
@@ -94,9 +79,6 @@ npm.cmd run dev
 npm run dev       # Start local development
 npm run build     # Create a production build
 npm run start     # Preview the built application locally
-npm run lint      # Run Oxlint
-npm run format    # Format the project with Oxfmt
-```
 
 Run `npm run build` before `npm run start`.
 
